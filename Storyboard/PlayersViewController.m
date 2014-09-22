@@ -8,6 +8,7 @@
 
 #import "PlayersViewController.h"
 #import "Player.h"
+#import "PlayerCell.h"
 
 @interface PlayersViewController ()
 
@@ -45,16 +46,57 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PlayerCell"];
+    PlayerCell *cell =
+    (PlayerCell *)[tableView dequeueReusableCellWithIdentifier:@"PlayerCell"];
     
     // Configure the cell...
+    // this is for playerCell class, subclassed as UITableViewCell
     Player * player = (self.players)[indexPath.row];
-    cell.textLabel.text = player.name;
-    cell.detailTextLabel.text = player.game;
+    cell.nameLabel.text = player.name;
+    cell.gameLabel.text = player.game;
+    cell.ratingImageView.image = [self imageForRating:player.rating];
+    
+    // this is for just the player class, no UITableViewCell subclass
+    /*
+    Player * player = (self.players)[indexPath.row];
+    
+    UILabel * nameLabel = (UILabel *)[cell viewWithTag:100];
+    nameLabel.text = player.name;
+    
+    UILabel * gameLabel = (UILabel *)[cell viewWithTag:101];
+    gameLabel.text = player.game;
+    
+    UIImageView * ratingImageView = (UIImageView *)[cell viewWithTag:102];
+    ratingImageView.image = [self imageForRating:player.rating];
+    */
     
     return cell;
 }
 
+-(UIImage *)imageForRating:(int)rating
+{
+    switch (rating)
+    {
+        case 1:
+            return [UIImage imageNamed:@"images/1StarSmall"];
+            break;
+        case 2:
+            return [UIImage imageNamed:@"images/2StarsSmall"];
+            break;
+        case 3:
+            return [UIImage imageNamed:@"images/3StarsSmall"];
+            break;
+        case 4:
+            return [UIImage imageNamed:@"images/4StarsSmall"];
+            break;
+        case 5:
+            return [UIImage imageNamed:@"images/5StarsSmall"];
+            break;
+        default:
+            return nil;
+            break;
+    }
+}
 
 /*
 // Override to support conditional editing of the table view.
