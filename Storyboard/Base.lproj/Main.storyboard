@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Gestures-->
         <scene sceneID="GzU-eS-zEO">
             <objects>
                 <viewController id="gHn-LO-Lq5" sceneMemberID="viewController">
@@ -31,45 +31,12 @@
                             <constraint firstAttribute="trailingMargin" secondItem="6EJ-x4-n0i" secondAttribute="trailing" constant="98" id="z93-7c-yUT"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="6RW-DW-BqM"/>
+                    <tabBarItem key="tabBarItem" title="Gestures" image="Gestures.png" id="6RW-DW-BqM"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ecQ-Mo-W3y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="332" y="-134"/>
-        </scene>
-        <!--Item 1-->
-        <scene sceneID="qwb-ix-Ekf">
-            <objects>
-                <viewController id="nUX-f2-XXI" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Cxh-2u-I7u"/>
-                        <viewControllerLayoutGuide type="bottom" id="6hz-Kq-enc"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="jr5-WU-QEG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Tab" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXl-IO-Gjw">
-                                <rect key="frame" x="127" y="273" width="66" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="lXl-IO-Gjw" firstAttribute="leading" secondItem="jr5-WU-QEG" secondAttribute="leadingMargin" constant="111" id="7uv-Ti-rcm"/>
-                            <constraint firstItem="lXl-IO-Gjw" firstAttribute="top" secondItem="Cxh-2u-I7u" secondAttribute="bottom" constant="253" id="dn3-c6-9KA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="lXl-IO-Gjw" secondAttribute="trailing" constant="111" id="gf1-RY-N2I"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="seZ-2h-6a6"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cp5-wJ-sX9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="332" y="-772"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="fdh-6W-w1K">
@@ -83,7 +50,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="nUX-f2-XXI" kind="relationship" relationship="viewControllers" id="tk3-Ed-ka5"/>
+                        <segue destination="QwI-zz-dsB" kind="relationship" relationship="viewControllers" id="4Fl-Ep-7V5"/>
                         <segue destination="gHn-LO-Lq5" kind="relationship" relationship="viewControllers" id="5iJ-uq-0kR"/>
                     </connections>
                 </tabBarController>
@@ -91,5 +58,71 @@
             </objects>
             <point key="canvasLocation" x="-104" y="-476"/>
         </scene>
+        <!--Players-->
+        <scene sceneID="hdi-UV-Sgl">
+            <objects>
+                <tableViewController id="sKN-S9-QLa" customClass="PlayersViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="FAV-7a-TCF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PlayerCell" textLabel="UT7-O3-5M4" detailTextLabel="taE-CI-pHf" style="IBUITableViewCellStyleSubtitle" id="Vgt-tH-wr1">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vgt-tH-wr1" id="Y9e-hM-WAv">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UT7-O3-5M4">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="taE-CI-pHf">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="sKN-S9-QLa" id="8CK-l8-0sJ"/>
+                            <outlet property="delegate" destination="sKN-S9-QLa" id="kjM-65-H8t"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Players" id="ZLL-hO-VLi"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8OG-mM-MDV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="768" y="-802"/>
+        </scene>
+        <!--Players-->
+        <scene sceneID="GFq-ft-DRO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QwI-zz-dsB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Players" image="Players.png" id="aGo-zg-TrV"/>
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fHT-QB-dB7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sKN-S9-QLa" kind="relationship" relationship="rootViewController" id="EQv-jk-5ji"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NYW-Yj-0vq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332" y="-802"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Gestures.png" width="30" height="30"/>
+        <image name="Players.png" width="30" height="30"/>
+    </resources>
 </document>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>834BE5CF-20CE-4933-BD49-456F7EFD24E1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Storyboard</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9F6D51D3D497FCBAB9B4615E361BC9CC7CFEB48C</key>
+		<string>https://github.com/ekbraens/storyboard.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Storyboard.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9F6D51D3D497FCBAB9B4615E361BC9CC7CFEB48C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ekbraens/storyboard.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9F6D51D3D497FCBAB9B4615E361BC9CC7CFEB48C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9F6D51D3D497FCBAB9B4615E361BC9CC7CFEB48C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Storyboard</string>
+		</dict>
+	</array>
+</dict>
+</plist>
