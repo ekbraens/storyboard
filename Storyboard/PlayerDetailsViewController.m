@@ -20,4 +20,12 @@
     [self.delegate playerDetailsViewConttrollerDidSave:self];
 }
 
+-(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 0)
+    {
+        [self.nameTextField becomeFirstResponder];
+    }
+}
+
 @end
