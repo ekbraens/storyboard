@@ -98,6 +98,29 @@
     }
 }
 
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"AddPlayer"])
+    {
+        UINavigationController * navCon = segue.destinationViewController;
+        PlayerDetailsViewController *playerDeetsVC = [navCon viewControllers][0];
+        playerDeetsVC.delegate = self;
+    }
+}
+
+#pragma mark - PlayerDetailsViewControllerDelegate
+
+-(void)playerDetailsViewConttrollerDidCancel:(PlayerDetailsViewController *)controller
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)playerDetailsViewConttrollerDidSave:(PlayerDetailsViewController *)controller
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

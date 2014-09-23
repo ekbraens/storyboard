@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D59C0D0A19D11F7F00CD6144 /* PlayerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D59C0D0919D11F7F00CD6144 /* PlayerDetailsViewController.m */; };
 		D5A4717119CFB200009C7986 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = D5A4717019CFB200009C7986 /* Images */; };
 		D5A4717719CFB668009C7986 /* PlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A4717619CFB668009C7986 /* PlayersViewController.m */; };
 		D5A4717A19CFB709009C7986 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A4717919CFB709009C7986 /* Player.m */; };
@@ -31,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D59C0D0819D11F7F00CD6144 /* PlayerDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerDetailsViewController.h; sourceTree = "<group>"; };
+		D59C0D0919D11F7F00CD6144 /* PlayerDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerDetailsViewController.m; sourceTree = "<group>"; };
 		D5A4717019CFB200009C7986 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		D5A4717519CFB668009C7986 /* PlayersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayersViewController.h; sourceTree = "<group>"; };
 		D5A4717619CFB668009C7986 /* PlayersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayersViewController.m; sourceTree = "<group>"; };
@@ -107,6 +110,8 @@
 				D5A4717919CFB709009C7986 /* Player.m */,
 				D5A4718019CFC99E009C7986 /* PlayerCell.h */,
 				D5A4718119CFC99E009C7986 /* PlayerCell.m */,
+				D59C0D0819D11F7F00CD6144 /* PlayerDetailsViewController.h */,
+				D59C0D0919D11F7F00CD6144 /* PlayerDetailsViewController.m */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -244,6 +249,7 @@
 				D5C86F1019CEA1E200A947A1 /* main.m in Sources */,
 				D5A4718219CFC99E009C7986 /* PlayerCell.m in Sources */,
 				D5A4717A19CFB709009C7986 /* Player.m in Sources */,
+				D59C0D0A19D11F7F00CD6144 /* PlayerDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
