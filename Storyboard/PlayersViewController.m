@@ -116,11 +116,15 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
--(void)playerDetailsViewConttrollerDidSave:(PlayerDetailsViewController *)controller
+-(void)playerDetailsViewConttroller:(PlayerDetailsViewController *)controller didAddPlayer:(Player *)player
 {
+    [self.players addObject:player];
+    NSIndexPath * indexPath = [NSIndexPath indexPathForRow:([self.players count] - 1)
+                                                 inSection:0];
+    [self.tableView insertRowsAtIndexPaths:@[indexPath]
+                          withRowAnimation:UITableViewRowAnimationAutomatic];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

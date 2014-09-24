@@ -125,7 +125,7 @@
                         <sections>
                             <tableViewSection headerTitle="Player Name" id="2qp-hk-dXc">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="GCE-Ha-G8l">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="GCE-Ha-G8l">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GCE-Ha-G8l" id="JZI-a9-8HW">
                                             <autoresizingMask key="autoresizingMask"/>

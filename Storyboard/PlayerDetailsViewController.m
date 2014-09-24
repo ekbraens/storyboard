@@ -17,10 +17,14 @@
 
 -(IBAction)done:(id)sender
 {
-    [self.delegate playerDetailsViewConttrollerDidSave:self];
+    Player * player = [[Player alloc] init];
+    player.name = self.nameTextField.text;
+    player.game = @"Unknown";
+    player.rating = 1;
+    [self.delegate playerDetailsViewConttroller:self didAddPlayer:player];
 }
 
--(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section == 0)
     {
